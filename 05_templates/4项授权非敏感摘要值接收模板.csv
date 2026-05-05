@@ -1,0 +1,20 @@
+field_group,field_name,required_or_optional,acceptable_value,missing_value_format,forbidden_content,notes
+SKU/规格,customer_sku,REQUIRED_FOR_REVIEW,授权非敏感SKU摘要,暂无/缺失/不适用 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于产品对象识别
+SKU/规格,specification,REQUIRED_FOR_REVIEW,授权非敏感规格摘要,暂无/缺失/不适用 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于规格识别和后续挂接
+SKU/规格,product_name,OPTIONAL,授权非敏感产品名称摘要,暂无/缺失/不适用 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,辅助识别
+SKU/规格,product_description,OPTIONAL,授权非敏感产品描述摘要,暂无/缺失/不适用 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,辅助识别
+BOM/制板,bom_template_ref_summary,REQUIRED_FOR_REVIEW,授权非敏感BOM/制板模板摘要,暂无/缺失 + 影响说明,正式BOM主库;ERP导入;价格;金额;付款;SECURE,不是正式BOM
+BOM/制板,component_summary,REQUIRED_FOR_REVIEW,授权非敏感组件摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,仅用于采购前准备
+BOM/制板,component_qty_summary,REQUIRED_FOR_REVIEW,授权非敏感组件数量摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得包含金额单价
+BOM/制板,component_unit_summary,REQUIRED_FOR_REVIEW,授权非敏感组件单位摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得自动推断
+BOM/制板,packaging_component_summary,REQUIRED_FOR_REVIEW,授权非敏感包装组件摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于包材范围判断
+包装,packaging_summary,REQUIRED_FOR_REVIEW,授权非敏感包装方案摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于包装边界判断
+包装,inner_pack_summary,REQUIRED_FOR_REVIEW,授权非敏感内包摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得读取原始图片/PDF
+包装,mid_pack_summary,OPTIONAL,授权非敏感中包摘要,暂无/缺失/不适用 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,如不适用需声明
+包装,outer_carton_summary,REQUIRED_FOR_REVIEW,授权非敏感外箱摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于箱规边界
+包装,label_sticker_summary,REQUIRED_FOR_REVIEW,授权非敏感标签/贴纸摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得上传原始图片
+包装,carton_spec_summary,REQUIRED_FOR_REVIEW,授权非敏感箱规摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得包含金额运费等
+配件/包材,accessory_item_summary,REQUIRED_FOR_REVIEW,授权非敏感配件摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于采购范围判断
+配件/包材,packaging_material_summary,REQUIRED_FOR_REVIEW,授权非敏感包材摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于包材采购边界
+配件/包材,product_object_relation_summary,REQUIRED_FOR_REVIEW,授权非敏感产品对象关系摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,用于挂接判断
+配件/包材,qty_unit_relation_summary,REQUIRED_FOR_REVIEW,授权非敏感数量/单位关系摘要,暂无/缺失 + 影响说明,价格;金额;付款;账号;SECURE;原始资料,不得包含单价金额
