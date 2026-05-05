@@ -1,0 +1,32 @@
+# Sensitive or raw business materials must not be synced
+**/SECURE/**
+**/02_AI运行区业务明细/**
+**/*价格*
+**/*金额*
+**/*付款*
+**/*账号*
+**/*收款*
+**/*银行*
+**/*开户行*
+**/*soft_unit_price_source*
+
+# Raw source materials are forbidden in this repository
+*.pdf
+*.PDF
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tif
+*.tiff
+*.xlsx
+*.xls
+*.xlsm
+*.csv.tmp
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*
